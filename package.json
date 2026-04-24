@@ -26,16 +26,16 @@
     "mcp-server",
     "ai-security"
   ],
-  "author": "Skill Auditor Team",
+  "author": "JaggerHouse",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-username/skill-auditor.git"
+    "url": "git+https://github.com/JaggerHouse/skill-auditor.git"
   },
   "bugs": {
-    "url": "https://github.com/your-username/skill-auditor/issues"
+    "url": "https://github.com/JaggerHouse/skill-auditor/issues"
   },
-  "homepage": "https://github.com/your-username/skill-auditor#readme",
+  "homepage": "https://github.com/JaggerHouse/skill-auditor#readme",
   "engines": {
     "node": ">=18.0.0"
   },
