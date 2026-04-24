@@ -1,0 +1,55 @@
+{
+  "name": "skill-auditor",
+  "version": "1.1.0",
+  "description": "🛡️ Security audit tool for MCP Servers & AI Skills. Detects backdoors, privacy risks, and suspicious code in third-party MCP Servers before you use them.",
+  "main": "build/index.js",
+  "type": "module",
+  "bin": {
+    "skill-auditor": "./build/index.js"
+  },
+  "scripts": {
+    "build": "npx tsc && node -e \"require('fs').chmodSync('build/index.js', '755')\"",
+    "start": "node build/index.js",
+    "prepublishOnly": "npm run build",
+    "dev": "npx tsc --watch"
+  },
+  "keywords": [
+    "mcp",
+    "modelcontextprotocol",
+    "security",
+    "audit",
+    "skill",
+    "backdoor-detection",
+    "privacy",
+    "code-review",
+    "security-audit",
+    "mcp-server",
+    "ai-security"
+  ],
+  "author": "Skill Auditor Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/skill-auditor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/skill-auditor/issues"
+  },
+  "homepage": "https://github.com/your-username/skill-auditor#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "build/",
+    "README.md",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "axios": "^1.15.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.39",
+    "typescript": "^5.9.3"
+  }
+}
